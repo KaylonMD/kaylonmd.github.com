@@ -12,6 +12,7 @@ header nav{
 .logo{
 	margin: auto;
 	text-align: center !important;
+	width: 30%;
 }
 .logo a{
 	text-decoration: none;
@@ -30,6 +31,7 @@ nav ul{
 	text-align: right;
 	line-height: 30px;
 	transition: max-height 1s;
+	width: 70%;
 }
 nav ul li{
 	display:inline-block;
@@ -122,9 +124,18 @@ background-color: #FFD900;
 	color: #fff;
 	display: none;
 }
+@media screen and (max-width: 1024px) {
+	.logo{
+		width: 40%;
+	}
+	nav ul{
+		width: 60%;
+	}
+}
 @media screen and (max-width: 768px) {
 	.logo{
 		padding-top: 10px;
+		width:70%;
 	}
 	nav ul {
 		max-height: 0px;
@@ -137,8 +148,26 @@ background-color: #FFD900;
 	}
 	.menu-icon{
 		display:block;
+		width: 30%;
 	}
 	.showing{
 		max-height: 20em;
+		width: 100%;
 	}
+}
+@media screen and (max-width: 425px) {
+	.logo{
+		width:90%;
+	}
+	.menu-icon{
+		width: 10%;
+	}
+	.logo .title{
+	font-size: 1.35rem;
+}
+}
+@media screen and (max-width: 375px) {
+		.logo .title{
+	font-size: 1.05rem;
+}
 }
